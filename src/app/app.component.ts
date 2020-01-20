@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashboard';
+
+  private showType: any;
+
+  getEventFromHead(event) {
+    console.log(event);
+    this.showType = event;
+  }
 }
